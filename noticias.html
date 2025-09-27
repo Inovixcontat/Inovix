@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Notícias - Pinus do Iriguassu</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #2c2c2c;
+      color: #fff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background: #1a1a1a;
+    }
+
+    header img {
+      width: 200px;
+    }
+
+    .titulo {
+      text-align: right;
+    }
+
+    .titulo h1 {
+      margin: 0;
+      font-size: 32px;
+      color: #ffffff;
+    }
+
+    .titulo p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #ffffff;
+    }
+
+    hr {
+      border: none;
+      height: 1px;
+      background: #FFD700;
+      margin: 20px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .section-title h2 {
+      font-size: 28px;
+      color: #FFD700;
+    }
+
+    .section-title p {
+      font-size: 16px;
+      color: #ddd;
+    }
+
+    .noticias {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 20px 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .noticia {
+      background: #1a1a1a;
+      border-radius: 10px;
+      overflow: hidden;
+      color: #ffb016;
+      transition: transform 0.3s;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+    }
+
+    .noticia:hover {
+      transform: scale(1.03);
+    }
+
+    .noticia a.img-link {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .noticia img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .noticia .conteudo {
+      padding: 15px;
+    }
+
+    .noticia h3 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .noticia .titulo-link {
+      text-decoration: none;
+      color: inherit;
+      display: inline-block;
+    }
+
+    .noticia p {
+      font-size: 14px;
+      margin-top: 10px;
+      color: #DAA520;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1a1a1a;
+      margin-top: 20px;
+      color: #ddd;
+    }
+
+    a.voltar {
+      display: block;
+      text-align: center;
+      margin: 30px 0;
+      text-decoration: none;
+      color: #FFD700;
+      font-weight: bold;
+    }
+
+    a.voltar:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <img src="logopng.png" alt="Logo Pc Caçapava">
+    <div class="titulo">
+      <h1>Pc Caçapava</h1>
+      <p>O Melhor e o Pior De Cada Bairro</p>
+    </div>
+  </header>
+
+  <hr>
+
+  <!-- Notícias -->
+  <div class="section-title">
+    <h2>Notícias do Bairro Pinus do Iriguassu</h2>
+    <p>Acompanhe as principais manchetes sobre o bairro em Caçapava-SP</p>
+  </div>
+
+  <div class="noticias">
+    <div class="noticia">
+      <!-- imagem e título apontando para a notícia 1 -->
+      <a class="img-link" href="https://spriomais.com.br/2025/06/23/jovem-e-preso-em-flagrante-com-mais-de-500-porcoes-de-drogas-em-cacapava/" target="_blank" rel="noopener">
+        <img src="noticia1.jpeg" alt="Notícia 1 - Instabilidade da Segurança">
+      </a>
+      <div class="conteudo">
+        <a class="titulo-link" href="https://spriomais.com.br/2025/06/23/jovem-e-preso-em-flagrante-com-mais-de-500-porcoes-de-drogas-em-cacapava/" target="_blank" rel="noopener">
+          <h3>Instabilidade da Segurança</h3>
+        </a>
+        <p>Moradores relatam o crescimento de assaltos e tráfico no Pinus do Iriguassu, trazendo insegurança à comunidade.</p>
+      </div>
+    </div>
+
+    <div class="noticia">
+      <!-- imagem e título apontando para a notícia 2 -->
+      <a class="img-link" href="https://www.policiamilitar.sp.gov.br/noticias/noticia-interna/2022/7/2530/baep-prende-criminosos-com-drogas-e-armas-em-cacapava#:~:text=3%C2%BA%20BAEP%20PRENDE%20DOIS%20INDIV%C3%8DDUOS,DROGAS%20E%20ARMAS%20POR%20CA%C3%87APAVA&text=Nesta%20semana%2C%20policiais%20militares%20do,durante%20%E2%80%9COpera%C3%A7%C3%A3o%20H%C3%A9rcules%20Simult%C3%A2nea%E2%80%9D." target="_blank" rel="noopener">
+        <img src="noticia2.jpeg" alt="Notícia 2 - Operação Policial">
+      </a>
+      <div class="conteudo">
+        <a class="titulo-link" href="https://www.policiamilitar.sp.gov.br/noticias/noticia-interna/2022/7/2530/baep-prende-criminosos-com-drogas-e-armas-em-cacapava#:~:text=3%C2%BA%20BAEP%20PRENDE%20DOIS%20INDIV%C3%8DDUOS,DROGAS%20E%20ARMAS%20POR%20CA%C3%87APAVA&text=Nesta%20semana%2C%20policiais%20militares%20do,durante%20%E2%80%9COpera%C3%A7%C3%A3o%20H%C3%A9rcules%20Simult%C3%A3nea%E2%80%9D." target="_blank" rel="noopener">
+          <h3>Operação Policial</h3>
+        </a>
+        <p>Polícia Civil e Militar realizam megaoperação no bairro, prendendo suspeitos ligados ao tráfico de drogas.</p>
+      </div>
+    </div>
+
+    <div class="noticia">
+      <!-- imagem e título apontando para a notícia 3 -->
+      <a class="img-link" href="https://cacapava.sp.gov.br/pinus-do-iriguassu-1-passa-por-obras-de-pavimentacao-e-tapa-buracos" target="_blank" rel="noopener">
+        <img src="noticia3.jpeg" alt="Notícia 3 - Melhorias na Infraestrutura">
+      </a>
+      <div class="conteudo">
+        <a class="titulo-link" href="https://cacapava.sp.gov.br/pinus-do-iriguassu-1-passa-por-obras-de-pavimentacao-e-tapa-buracos" target="_blank" rel="noopener">
+          <h3>Melhorias na Infraestrutura</h3>
+        </a>
+        <p>Prefeitura anuncia projeto para reforço da iluminação pública e pavimentação em ruas do Pinus do Iriguassu.</p>
+      </div>
+    </div>
+  </div>
+
+  <a class="voltar" href="homepc.html">← Voltar para a página inicial</a>
+
+  <footer>
+  </footer>
+</body>
+</html>
