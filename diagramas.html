@@ -263,7 +263,7 @@
     window.addEventListener('load', function() {
       // Pré-carregar páginas para navegação mais rápida
       if (!('connection' in navigator && navigator.connection.saveData)) {
-        const pages = ['inovix_projeto_novo - 27-06.html', 'sentry.html'];
+        const pages = ['index.html', 'sentry.html'];
         pages.forEach(page => {
           const link = document.createElement('link');
           link.rel = 'prefetch';
@@ -274,4 +274,5 @@
     });
   </script>
 </body>
+
 </html>
