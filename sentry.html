@@ -1,0 +1,253 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sentry - Radar Inteligente com IA para fiscalização de trânsito integrado com semáforos">
+  <title>Sentry - Radar Inteligente | Inovix</title>
+  
+  <!-- Pré-carregar recursos -->
+  <link rel="preload" href="inovix-otimizado.css" as="style">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="inovix-otimizado.css" media="all">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="all">
+  
+  <!-- CSS específico para a página Sentry -->
+  <style>
+    /* Estilos específicos apenas para esta página */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      padding: 50px 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .feature {
+      background-color: var(--card-background);
+      padding: 30px 25px;
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    }
+    
+    .feature-icon {
+      width: 70px;
+      height: 70px;
+      background-color: var(--secondary-color);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      color: var(--primary-color);
+      font-size: 28px;
+    }
+    
+    .feature h3 {
+      margin-bottom: 15px;
+      color: var(--primary-color);
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+    
+    .hero img {
+      height: 140px;
+      margin: 25px 0;
+      filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.1));
+    }
+    
+    /* Estilos para a seção de contato (igual ao Inovix) */
+    .contato {
+      padding: 40px 20px 30px;
+      background-color: #f8f9fa;
+      margin-top: 20px;
+    }
+    
+    .contato .container {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    
+    .contato h2 {
+      color: #0077b6;
+      margin-bottom: 15px;
+      font-size: 2rem;
+    }
+    
+    .contato > p {
+      font-size: 1.1rem;
+      margin-bottom: 25px;
+      color: #555;
+    }
+    
+    .info-contato {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      margin-top: 15px;
+    }
+    
+    .info-contato p {
+      margin: 12px 0;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    
+    .info-contato i {
+      color: #0077b6;
+      font-size: 1.2rem;
+      width: 20px;
+    }
+    
+    /* Suavizar a rolagem */
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    /* Reduzir margem do main */
+    main {
+      margin-bottom: 0;
+    }
+    
+    .container {
+      padding-bottom: 0;
+    }
+    
+    /* Responsividade específica */
+    @media (max-width: 768px) {
+      .features {
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+        gap: 20px;
+      }
+      
+      .feature {
+        padding: 25px 20px;
+      }
+      
+      .info-contato p {
+        flex-direction: column;
+        gap: 5px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .hero img {
+        height: 110px;
+      }
+      
+      .feature-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+      }
+      
+      .contato {
+        padding: 30px 15px 20px;
+      }
+      
+      .info-contato {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="logo-titulo">
+    <img src="Inovix.png" alt="Logo Inovix" width="80" height="80" loading="lazy">
+    <h1>- TECNOLOGIA E INOVAÇÃO</h1>
+  </div>
+  <nav aria-label="Navegação principal">
+    <a href="index.html">Início</a>
+    <a href="diagramas.html">Diagramas</a> <!-- NOVO LINK ADICIONADO -->
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+  <section class="hero" id="sobre">
+    <h1>Sentry - Radar Inteligente</h1>
+    <img src="logo.png" alt="Logo Sentry" width="160" height="140" loading="lazy">
+    <p>
+      O <strong>Sentry</strong> é um radar de trânsito com inteligência artificial integrada e semáforo, 
+      desenvolvido pela <strong>Inovix</strong> para garantir mais segurança e eficiência no tráfego.
+    </p>
+  </section>
+
+  <section class="features" id="solucoes">
+    <div class="feature">
+      <div class="feature-icon">
+        <i class="fas fa-tachometer-alt" aria-hidden="true"></i>
+      </div>
+      <h3>Detecção de Velocidade</h3>
+      <p>Fiscalização de veículos em tempo real com alta precisão.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">
+        <i class="fas fa-car" aria-hidden="true"></i>
+      </div>
+      <h3>Reconhecimento de Placas</h3>
+      <p>Identificação automática de placas para maior controle.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">
+        <i class="fas fa-traffic-light" aria-hidden="true"></i>
+      </div>
+      <h3>Integração Semafórica</h3>
+      <p>Sincronização inteligente com os semáforos da cidade.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">
+        <i class="fas fa-chart-line" aria-hidden="true"></i>
+      </div>
+      <h3>Relatórios Rápidos</h3>
+      <p>Informações acessíveis em tempo real para tomada de decisão.</p>
+    </div>
+  </section>
+
+  <!-- Seção de Contato adicionada -->
+  <section id="contato" class="contato">
+    <div class="container">
+      <h2>Entre em Contato</h2>
+      <p>Tem alguma dúvida ou deseja saber mais sobre nossos projetos?</p>
+      <div class="info-contato">
+        <p><i class="fas fa-envelope"></i> Email: inovixcontat@gmail.com</p>
+        <p><i class="fas fa-phone"></i> Telefone: (12) 99603-5477</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Inovix - Todos os direitos reservados</p>
+    <p>Desenvolvido com tecnologia de ponta para cidades inteligentes</p>
+  </footer>
+
+  <!-- Scripts de performance -->
+  <script>
+    // Otimização: Carregar recursos após a página
+    window.addEventListener('load', function() {
+      // Pré-carregar página inicial para navegação mais rápida
+      if (!('connection' in navigator && navigator.connection.saveData)) {
+        const link = document.createElement('link');
+        link.rel = 'prefetch';
+        link.href = 'inovix_projeto_novo - 27-06.html';
+        document.head.appendChild(link);
+      }
+    });
+  </script>
+</body>
+</html>
