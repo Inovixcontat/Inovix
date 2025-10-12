@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Home - Paixão de Família</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #741212;
+      color: #fff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background: #5c0f0f;
+    }
+
+    header img {
+      width: 200px;
+    }
+
+    .titulo {
+      text-align: right;
+    }
+
+    .titulo h1 {
+      margin: 0;
+      font-size: 32px;
+      color: #ffb016;
+    }
+
+    .titulo p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #ffb016;
+    }
+
+    nav a {
+      color: #ffb016;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    hr {
+      border: none;
+      height: 1px;
+      background: #ffb016;
+      margin: 20px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .section-title h2 {
+      font-size: 28px;
+    }
+
+    .section-title p {
+      font-size: 16px;
+      color: #ddd;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: #5c0f0f;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .card a {
+      display: block;
+      padding: 15px;
+      text-decoration: none;
+      color: #ffb016;
+      font-weight: bold;
+    }
+
+    .bibliografia {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .bibliografia ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .bibliografia li {
+      margin: 10px 0;
+    }
+
+    .bibliografia a {
+      color: #ffb016;
+      text-decoration: none;
+    }
+
+    .bibliografia a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #5c0f0f;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <img src="logo.jpg" alt="Logo Paixão de Família">
+    <div class="titulo">
+      <h1>Paixão de Família</h1>
+      <p>Usamos o Melhor Tempero Familiar, O Amor!</p>
+    </div>
+    <nav>
+        <a href="index.html">Início - Inovix</a>
+    </nav>
+  </header>
+
+  <hr>
+
+  <!-- Cardápio -->
+  <div class="section-title">
+    <h2>Cardápio</h2>
+    <p>Escolha uma categoria</p>
+  </div>
+
+  <div class="cards">
+    <div class="card"><img src="pizza.jpg" alt="Pizzas"><a href="pizzas.html">Pizzas</a></div>
+    <div class="card"><img src="massas.jpg" alt="Massas"><a href="massas.html">Massas</a></div>
+    <div class="card"><img src="carnes.jpg" alt="Carnes"><a href="carnes.html">Carnes</a></div>
+    <div class="card"><img src="petiscos.jpg" alt="Petiscos"><a href="petiscos.html">Petiscos</a></div>
+    <div class="card"><img src="couvert.jpg" alt="Couvert"><a href="couvert.html">Couvert</a></div>
+    <div class="card"><img src="peixes.jpg" alt="Peixes"><a href="peixes.html">Peixes</a></div>
+    <div class="card"><img src="aves.jpg" alt="Aves"><a href="aves.html">Aves</a></div>
+    <div class="card"><img src="carne-especial.jpg" alt="Carnes Especiais"><a href="carne-especial.html">Carnes Especiais</a></div>
+    <div class="card"><img src="carne-exotica.jpg" alt="Carnes Exóticas"><a href="carne-exotica.html">Carnes Exóticas</a></div>
+    <div class="card"><img src="rodizio.jpg" alt="Rodízio"><a href="rodizio.html">Rodízio</a></div>
+    <div class="card"><img src="aguas.jpg" alt="Águas"><a href="aguas.html">Águas</a></div>
+    <div class="card"><img src="cervejas.jpg" alt="Cervejas"><a href="cervejas.html">Cervejas</a></div>
+    <div class="card"><img src="vinhos.jpg" alt="Carta de Vinhos"><a href="vinhos.html">Carta de Vinhos</a></div>
+    <div class="card"><img src="drinks.jpg" alt="Drinks"><a href="drinks.html">Drinks</a></div>
+    <div class="card"><img src="destilados.jpg" alt="Destilados"><a href="destilados.html">Destilados</a></div>
+    <div class="card"><img src="refrigerantes.jpg" alt="Refrigerantes"><a href="refrigerantes.html">Refrigerantes</a></div>
+  </div>
+ 
+ <div class="bibliografia">
+    <h2>Sobre</h2>
+Paixão De Família nasceu do amor pela boa comida e pela tradição de reunir pessoas em torno da mesa. Nosso restaurante valoriza receitas caseiras, preparadas com ingredientes frescos e selecionados, que trazem à tona o verdadeiro sabor da gastronomia feita com carinho. Mais do que servir refeições, acreditamos em criar momentos especiais: cada prato é pensado para despertar memórias afetivas e celebrar a união entre amigos e familiares. Aqui, cada detalhe importa — do cuidado no atendimento à dedicação em cada receita. Seja para um almoço descontraído, um jantar especial ou uma comemoração inesquecível, o Paixão de Família está sempre de portas abertas para receber você e aqueles que ama.
+  </div>
+
+
+  <!-- Bibliografia -->
+  <div class="bibliografia">
+    <h2>Bibliografia</h2>
+    <ul>
+      <li><a href="https://www.receiteria.com.br" target="_blank">Receiteria</a></li>
+      <li><a href="https://www.panelinha.com.br" target="_blank">Panelinha</a></li>
+      <li><a href="https://www.tudogostoso.com.br" target="_blank">TudoGostoso</a></li>
+    </ul>
+  </div>
+
+  <footer>
+  </footer>
+</body>
+</html>

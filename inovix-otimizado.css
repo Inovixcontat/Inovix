@@ -1,0 +1,289 @@
+/* CSS Otimizado - Versão Performance */
+:root {
+    --primary-color: #0077b6;
+    --secondary-color: #eaf6fb;
+    --text-color: #333;
+    --light-text: #666;
+    --background-color: #f8f9fa;
+    --card-background: #fff;
+    --border-color: #ddd;
+}
+
+/* Reset mínimo e otimizado */
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+    background: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header otimizado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: var(--card-background);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo-titulo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-titulo img {
+    width: 80px;
+    height: 80px;
+    /* Removida transição para performance */
+}
+
+.logo-titulo h1 {
+    font-size: 24px;
+    color: var(--primary-color);
+    margin: 0;
+    font-weight: 600;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 16px;
+    padding: 5px 0;
+    position: relative;
+}
+
+/* Efeito hover simplificado */
+nav a:hover {
+    color: var(--primary-color);
+}
+
+/* Hero section otimizada */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: var(--secondary-color);
+    /* Gradiente removido para performance */
+}
+
+.hero h2 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: var(--light-text);
+}
+
+/* Main content otimizado */
+main {
+    padding: 40px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex: 1;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+}
+
+/* Cards otimizados - transições removidas */
+.card {
+    background: var(--card-background);
+    padding: 30px;
+    margin-bottom: 30px;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    margin: 0 0 20px 0;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+.card p {
+    color: var(--light-text);
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Lista de projetos otimizada */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 25px;
+    padding: 20px;
+    background: var(--secondary-color);
+    border-radius: 10px;
+}
+
+.projeto {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.projeto img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+    /* Removido shadow e transição */
+}
+
+.projeto div {
+    flex: 1;
+}
+
+.projeto strong {
+    display: block;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.projeto-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 2px solid var(--primary-color);
+    border-radius: 6px;
+    transition: none; /* Removida transição */
+}
+
+.projeto-link:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+/* Footer otimizado */
+footer {
+    text-align: center;
+    padding: 25px 15px;
+    background: #2c3e50;
+    color: #fff;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+}
+
+/* Media queries otimizadas */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px 20px;
+        gap: 15px;
+    }
+    
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .hero h2 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    main {
+        padding: 30px 20px;
+    }
+    
+    .card {
+        padding: 20px;
+    }
+    
+    .projeto {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 40px 15px;
+    }
+    
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+    
+    .logo-titulo {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .logo-titulo h1 {
+        font-size: 20px;
+    }
+}
+
+/* Regras de performance específicas */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Evitar repaints desnecessários */
+.card, li {
+    will-change: transform;
+    backface-visibility: hidden;
+}
+
+/* Otimização para mobile first */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

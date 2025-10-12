@@ -1,0 +1,277 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Diagramas do Sistema Sentry - DER e Diagrama de Contexto">
+  <title>Diagramas do Sistema Sentry | Inovix</title>
+  
+  <!-- Pré-carregar recursos -->
+  <link rel="preload" href="inovix-otimizado.css" as="style">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="inovix-otimizado.css" media="all">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="all">
+  
+  <!-- CSS específico para a página de Diagramas -->
+  <style>
+    /* Estilos específicos apenas para esta página */
+    :root {
+      --primary-color: #0077b6;
+      --secondary-color: #caf0f8;
+      --card-background: #ffffff;
+      --border-color: #e0e0e0;
+    }
+    
+    .diagrams-hero {
+      text-align: center;
+      padding: 60px 20px 40px;
+      background: linear-gradient(135deg, #f8fdff 0%, #e6f7ff 100%);
+    }
+    
+    .diagrams-hero h1 {
+      color: var(--primary-color);
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+    
+    .diagrams-hero p {
+      font-size: 1.2rem;
+      color: #555;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    
+    .diagrams-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+      padding: 50px 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .diagram-section {
+      background-color: var(--card-background);
+      padding: 30px 25px;
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    }
+    
+    .diagram-section h2 {
+      margin-bottom: 20px;
+      color: var(--primary-color);
+      font-size: 1.8rem;
+      font-weight: 600;
+      text-align: center;
+      padding-bottom: 15px;
+      border-bottom: 2px solid #f0f0f0;
+    }
+    
+    .diagram-image {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: block;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .diagram-description {
+      margin-top: 25px;
+      color: #555;
+      line-height: 1.7;
+      text-align: justify;
+    }
+    
+    .diagram-description p {
+      margin-bottom: 15px;
+    }
+    
+    /* Estilos para a seção de contato (igual ao Sentry) */
+    .contato {
+      padding: 40px 20px 30px;
+      background-color: #f8f9fa;
+      margin-top: 20px;
+    }
+    
+    .contato .container {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    
+    .contato h2 {
+      color: #0077b6;
+      margin-bottom: 15px;
+      font-size: 2rem;
+    }
+    
+    .contato > p {
+      font-size: 1.1rem;
+      margin-bottom: 25px;
+      color: #555;
+    }
+    
+    .info-contato {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      margin-top: 15px;
+    }
+    
+    .info-contato p {
+      margin: 12px 0;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    
+    .info-contato i {
+      color: #0077b6;
+      font-size: 1.2rem;
+      width: 20px;
+    }
+    
+    /* Suavizar a rolagem */
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    /* Reduzir margem do main */
+    main {
+      margin-bottom: 0;
+    }
+    
+    .container {
+      padding-bottom: 0;
+    }
+    
+    /* Responsividade específica */
+    @media (max-width: 768px) {
+      .diagrams-container {
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+        gap: 30px;
+      }
+      
+      .diagram-section {
+        padding: 25px 20px;
+      }
+      
+      .diagrams-hero {
+        padding: 40px 20px 30px;
+      }
+      
+      .diagrams-hero h1 {
+        font-size: 2rem;
+      }
+      
+      .diagrams-hero p {
+        font-size: 1.1rem;
+      }
+      
+      .info-contato p {
+        flex-direction: column;
+        gap: 5px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .diagrams-hero h1 {
+        font-size: 1.8rem;
+      }
+      
+      .diagram-section h2 {
+        font-size: 1.5rem;
+      }
+      
+      .contato {
+        padding: 30px 15px 20px;
+      }
+      
+      .info-contato {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-titulo">
+      <img src="Inovix.png" alt="Logo Inovix" width="80" height="80" loading="lazy">
+      <h1>- TECNOLOGIA E INOVAÇÃO</h1>
+    </div>
+    <nav aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a href="sentry.html">Sentry</a>
+    </nav>
+  </header>
+
+  <section class="diagrams-hero">
+    <h1>Diagramas do Sistema Sentry</h1>
+    <p>Visualize o Diagrama de Entidade-Relacionamento (DER) e o Diagrama de Contexto do sistema Sentry</p>
+  </section>
+
+  <main class="diagrams-container">
+    <section class="diagram-section">
+      <h2>Diagrama de Entidade-Relacionamento (DER)</h2>
+      <img src="imagem-DER.jpg" alt="Diagrama de Entidade-Relacionamento do Sistema Sentry" class="diagram-image">
+      <div class="diagram-description">
+        <p>O Diagrama de Entidade-Relacionamento (DER) representa a estrutura de dados do sistema Sentry, mostrando as entidades principais, seus atributos e os relacionamentos entre elas.</p>
+        <p>As entidades incluem: Veículos, Infrações, Semáforos, Câmeras, entre outras, com seus respectivos relacionamentos que definem como os dados são organizados e conectados no sistema.</p>
+      </div>
+    </section>
+
+    <section class="diagram-section">
+      <h2>Diagrama de Contexto</h2>
+      <img src="DDC - SENTRY.png" alt="Diagrama de Contexto do Sistema Sentry" class="diagram-image">
+      <div class="diagram-description">
+        <p><B>F1.</B> DADOS DO PROPRIETÁRIO CPF/CNH/TIPO
+	<p><B>F2.</B> DADOS DO PROPRIETÁRIO OK
+	<p><B>F3.</B> DADOS DO VEÍCULO PLACA/VELOCIDADE
+	<p><B>F4.</B> DADOS DO VEÍCULO OK
+	<p><B>F5.</B> DADOS LEIS/REGRAS DE TRÂNSITO
+	<p><B>F6.</B> DADOS MEDIÇÃO
+	<p><B>F7.</B> DADOS RELATÓRIO DADOS DA MEDIÇÃO
+	<p><B>F8.</B> DADOS DA MEDIÇÃO OK
+	<p><B>F9.</B> DADOS DA INFRAÇÃO
+	<p><B>F10.</B> DADOS RELATÓRIO DA INFRAÇÃO
+	<p><B>F11.</B> DADOS SEMÁFORO FASE/ESTADO ATUAL
+	<p><B>F12.</B> DADOS AJUSTE SEMAFÓRICO	
+	<p>O Diagrama de Contexto ilustra como o sistema Sentry interage com entidades externas, definindo os limites do sistema e os fluxos de informação com o ambiente externo.</p>
+        <p>Mostra as interfaces com sistemas de trânsito, autoridades municipais, motoristas e outros sistemas relacionados, proporcionando uma visão macro das interações do Sentry.</p>
+      </div>
+    </section>
+  </main>
+
+ <footer>
+    <p>© 2025 Inovix - Todos os direitos reservados</p>
+    <p>Desenvolvido com tecnologia de ponta para cidades inteligentes</p>
+  </footer>
+
+  <!-- Scripts de performance -->
+  <script>
+    // Otimização: Carregar recursos após a página
+    window.addEventListener('load', function() {
+      // Pré-carregar páginas para navegação mais rápida
+      if (!('connection' in navigator && navigator.connection.saveData)) {
+        const pages = ['inovix_projeto_novo - 27-06.html', 'sentry.html'];
+        pages.forEach(page => {
+          const link = document.createElement('link');
+          link.rel = 'prefetch';
+          link.href = page;
+          document.head.appendChild(link);
+        });
+      }
+    });
+  </script>
+</body>
+</html>

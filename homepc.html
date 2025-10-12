@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Home - PC Caçapava</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #2c2c2c;
+      color: #fff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background: #1a1a1a;
+    }
+
+    header img {
+      width: 200px;
+    }
+
+    .titulo {
+      text-align: right;
+    }
+
+    .titulo h1 {
+      margin: 0;
+      font-size: 32px;
+      color: #ffffff;
+    }
+
+    .titulo p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #ffffff;
+    }
+
+    nav a {
+      color: #FFD700;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    hr {
+      border: none;
+      height: 1px;
+      background: #FFD700;
+      margin: 20px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .section-title h2 {
+      font-size: 28px;
+    }
+
+    .section-title p {
+      font-size: 16px;
+      color: #ddd;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: #1a1a1a;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .card a {
+      display: block;
+      padding: 15px;
+      text-decoration: none;
+      color: #ffb016;
+      font-weight: bold;
+    }
+
+    .bibliografia {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .bibliografia ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .bibliografia li {
+      margin: 10px 0;
+    }
+
+    .bibliografia a {
+      color: #ffb016;
+      text-decoration: none;
+    }
+
+    .bibliografia a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1a1a1a;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <img src="logopng.png" alt="Logo Pc Caçapava">
+    <div class="titulo">
+      <h1>Pc Caçapava</h1>
+      <p>O Melhor e o Pior De Cada Bairro</p>
+    </div>
+    <nav>
+        <a href="index.html">Início - Inovix</a>
+    </nav>
+  </header>
+
+  <hr>
+
+  <!-- Problemas -->
+  <div class="section-title">
+    <h2>Principal De Cada Bairro</h2>
+    <p>Escolha uma categoria</p>
+  </div>
+
+  <div class="cards">
+    <div class="card"><img src="crime.jpg" alt="Criminalidade"><a href="crime.html">Criminalidade Pinus</a></div>
+    <div class="card"><img src="alerta.jfif" alt="Notícias"><a href="noticias.html">Noticias Pinus</a></div>
+    <div class="card"><img src="lazer.jpeg" alt="lazer"><a href="lazer.html">Falta de Lazer</a></div>
+    <div class="card"><img src="oportunidades.jpg" alt="Oportunidades"><a href="oportunidades.html">Oportunidades</a></div>
+  </div>
+ 
+ <div class="bibliografia">
+    <h2>Sobre</h2>
+O Pc Caçapava é dedicado a destacar os principais problemas enfrentados pelos bairros de Caçapava. Com foco em questões como infraestrutura, saúde, segurança e meio ambiente, buscamos informar e dar voz à comunidade local. Nosso objetivo é promover o debate e cobrar ações das autoridades para melhorar a qualidade de vida na cidade.
+  </div>
+
+
+  <!-- Bibliografia -->
+  <div class="bibliografia">
+    <h2>Bibliografia</h2>
+    <ul>
+      <li><a href="https://g1.globo.com/" target="_blank">Globo - G1</a></li>
+      <li><a href="https://noticias.uol.com.br/" target="_blank">UOL Notícias</a></li>
+      <li><a href="https://www.cnnbrasil.com.br/" target="_blank">CNN Brasil</a></li>
+    </ul>
+  </div>
+
+  <footer>
+  </footer>
+</body>
+</html>

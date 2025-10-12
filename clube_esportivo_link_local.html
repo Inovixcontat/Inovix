@@ -1,0 +1,268 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Clube Esportivo - Strike</title>
+    <style>
+        body {
+            background-color: #3D2074;
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+        }
+        header img {
+            width: 200px;
+        }
+        h1 {
+            color: #FEE123;
+        }
+        h2 {
+            /* Remove o cursor daqui porque vamos colocar no summary */
+            margin: 0;
+        }
+        .modalidade {
+            background-color: #F77B2D;
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .modalidade img {
+            width: 250px;
+            border: 3px solid #FEE123;
+            border-radius: 5px;
+            display: block;
+            margin-top: 10px;
+        }
+        .info {
+            margin-top: 10px;
+        }
+        footer {
+            margin-top: 40px;
+            background-color: #2C1253;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        details summary {
+            list-style: none;
+            cursor: pointer;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 10px;
+        }
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+        /* Símbolo de seta para baixo */
+        details summary::after {
+            content: "↓";
+            font-size: 1.2em;
+            transition: transform 0.3s ease;
+        }
+        /* Quando aberto, muda para seta para cima */
+        details[open] summary::after {
+            content: "↑";
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="strike.png" width="200">
+        <h1>Clube Esportivo Strike</h1>
+        <p>Venha participar da inauguração do nosso clube com diversas modalidades esportivas!</p>
+    </header>
+
+    <section class="modalidade">
+        <details>
+            <summary><h2>Basquete</h2></summary>
+            <img src="Basquete.webp">
+            <div class="info">
+                <p><strong>Descrição:</strong> Esporte coletivo com bola onde o objetivo é fazer cestas</p>
+                <p><strong>Local de prática:</strong> Quadra coberta</p>
+                <p><strong>Vestuário:</strong> Camiseta, bermuda e tênis</p>
+                <p><strong>Preço da JÓIA:</strong> R$ 200,00</p>
+                <p><strong>Mensalidade:</strong> R$ 90,00</p>
+            </div>
+        </details>
+    </section>
+
+    <section class="modalidade">
+        <details>
+            <summary><h2>Vôlei</h2></summary>
+            <img src="Volei.webp">
+            <div class="info">
+                <p><strong>Descrição:</strong> Esporte com bola jogado com as mãos sobre uma rede</p>
+                <p><strong>Local de prática:</strong> Quadra de areia ou ginásio</p>
+                <p><strong>Vestuário:</strong> Camiseta, shorts e tênis</p>
+                <p><strong>Preço da JÓIA:</strong> R$ 180,00</p>
+                <p><strong>Mensalidade:</strong> R$ 85,00</p>
+            </div>
+        </details>
+    </section>
+
+    <section class="modalidade">
+        <details>
+            <summary><h2>Futsal</h2></summary>
+            <img src="Futsal.jpg">
+            <div class="info">
+                <p><strong>Descrição:</strong> Versão do futebol adaptada para quadras internas</p>
+                <p><strong>Local de prática:</strong> Ginásio poliesportivo</p>
+                <p><strong>Vestuário:</strong> Camiseta, calção e tênis de futsal</p>
+                <p><strong>Preço da JÓIA:</strong> R$ 250,00</p>
+                <p><strong>Mensalidade:</strong> R$ 95,00</p>
+            </div>
+        </details>
+    </section>
+
+    <section class="modalidade">
+        <details>
+            <summary><h2>Natação</h2></summary>
+            <img src="Natação.jpg">
+            <div class="info">
+                <p><strong>Descrição:</strong> Esporte praticado na água com diferentes estilos de nado</p>
+                <p><strong>Local de prática:</strong> Piscina aquecida</p>
+                <p><strong>Vestuário:</strong> Sunga/maiô e touca</p>
+                <p><strong>Preço da JÓIA:</strong> R$ 300,00</p>
+                <p><strong>Mensalidade:</strong> R$ 110,00</p>
+            </div>
+        </details>
+    </section>
+
+    <section class="modalidade">
+        <details>
+            <summary><h2>Tênis</h2></summary>
+            <img src="Tenis.jpg">
+            <div class="info">
+                <p><strong>Descrição:</strong> Jogo de raquetes em quadra com rede central</p>
+                <p><strong>Local de prática:</strong> Quadra de saibro ou rápida</p>
+                <p><strong>Vestuário:</strong> Camisa polo, short/saia e tênis apropriado</p>
+                <p><strong>Preço da JÓIA:</strong> R$ 350,00</p>
+                <p><strong>Mensalidade:</strong> R$ 120,00</p>
+            </div>
+        </details>
+    </section>
+
+    <section class="modalidade">
+        <details>
+            <summary><h2>Musculação</h2></summary>
+            <img src="Musculação.jpg">
+            <div class="info">
+                <p><strong>Descrição:</strong> Treinamento com pesos para ganho de força e massa muscular</p>
+                <p><strong>Local de prática:</strong> Sala de musculação equipada</p>
+                <p><strong>Vestuário:</strong> Camiseta, bermuda/legging e tênis</p>
+                <p><strong>Preço da JÓIA:</strong> R$ 200,00</p>
+                <p><strong>Mensalidade:</strong> R$ 100,00</p>
+            </div>
+        </details>
+    </section>
+
+    <section class="modalidade">
+        <details>
+            <summary><h2>Karatê</h2></summary>
+            <img src="Karate.webp">
+            <div class="info">
+                <p><strong>Descrição:</strong> Arte marcial japonesa focada em golpes com mãos e pés</p>
+                <p><strong>Local de prática:</strong> Dojô (sala de artes marciais)</p>
+                <p><strong>Vestuário:</strong> Kimono branco e faixa</p>
+                <p><strong>Preço da JÓIA:</strong> R$ 150,00</p>
+                <p><strong>Mensalidade:</strong> R$ 80,00</p>
+            </div>
+        </details>
+    </section>
+
+    <section class="modalidade">
+        <details>
+            <summary><h2>Judô</h2></summary>
+            <img src="judo.webp">
+            <div class="info">
+                <p><strong>Descrição:</strong> Arte marcial japonesa baseada em alavancas e quedas</p>
+                <p><strong>Local de prática:</strong> Dojô</p>
+                <p><strong>Vestuário:</strong> Kimono branco e faixa</p>
+                <p><strong>Preço da JÓIA:</strong> R$ 160,00</p>
+                <p><strong>Mensalidade:</strong> R$ 85,00</p>
+            </div>
+        </details>
+    </section>
+
+    <section class="modalidade">
+        <details>
+            <summary><h2>Capoeira</h2></summary>
+            <img src="Capoeira.jpg">
+            <div class="info">
+                <p><strong>Descrição:</strong> Arte brasileira que mistura luta, dança e música</p>
+                <p><strong>Local de prática:</strong> Sala com espelhos ou quadra aberta</p>
+                <p><strong>Vestuário:</strong> Calça branca e camiseta</p>
+                <p><strong>Preço da JÓIA:</strong> R$ 130,00</p>
+                <p><strong>Mensalidade:</strong> R$ 75,00</p>
+            </div>
+        </details>
+    </section>
+
+    <section class="modalidade">
+        <details>
+            <summary><h2>Jiu-jitsu</h2></summary>
+            <img src="Jiu-jitsu.webp">
+            <div class="info">
+                <p><strong>Descrição:</strong> Arte marcial focada em chão e imobilizações</p>
+                <p><strong>Local de prática:</strong> Tatame</p>
+                <p><strong>Vestuário:</strong> Kimono azul ou branco com faixa</p>
+                <p><strong>Preço da JÓIA:</strong> R$ 180,00</p>
+                <p><strong>Mensalidade:</strong> R$ 90,00</p>
+            </div>
+        </details>
+    </section>
+
+    <section class="modalidade">
+        <details>
+            <summary><h2>Aikido</h2></summary>
+            <img src="Aikido.webp">
+            <div class="info">
+                <p><strong>Descrição:</strong> Arte marcial japonesa baseada em defesa pessoal</p>
+                <p><strong>Local de prática:</strong> Dojô</p>
+                <p><strong>Vestuário:</strong> Kimono e hakama (saia-calça tradicional)</p>
+                <p><strong>Preço da JÓIA:</strong> R$ 170,00</p>
+                <p><strong>Mensalidade:</strong> R$ 85,00</p>
+            </div>
+        </details>
+    </section>
+
+    <section class="modalidade">
+        <details>
+            <summary><h2>Kung Fu</h2></summary>
+            <img src="KungFu.jpg">
+            <div class="info">
+                <p><strong>Descrição:</strong> Arte marcial chinesa com movimentos amplos e estilizados</p>
+                <p><strong>Local de prática:</strong> Sala de artes marciais</p>
+                <p><strong>Vestuário:</strong> Roupa tradicional chinesa ou uniforme de treino</p>
+                <p><strong>Preço da JÓIA:</strong> R$ 160,00</p>
+                <p><strong>Mensalidade:</strong> R$ 80,00</p>
+            </div>
+        </details>
+    </section>
+
+    <section class="modalidade">
+        <details>
+            <summary><h2>Dama</h2></summary>
+            <img src="Dama.jpg">
+            <div class="info">
+                <p><strong>Descrição:</strong> Jogo de tabuleiro estratégico</p>
+                <p><strong>Local de prática:</strong> Sala de jogos</p>
+                <p><strong>Vestuário:</strong> Livre</p>
+                <p><strong>Preço da JÓIA:</strong> R$ 50,00</p>
+                <p><strong>Mensalidade:</strong> R$ 20,00</p>
+            </div>
+        </details>
+    </section>
+
+    <footer>
+        <p>© 2024 Clube Esportivo Strike - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
